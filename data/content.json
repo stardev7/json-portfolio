@@ -2,7 +2,7 @@
   "meta": {
     "title": "Lucas Campos | Senior Full Stack Engineer",
     "description": "Lucas Campos - Senior Full Stack Engineer specializing in robust web application development",
-    "themeColor": "blue",
+    "themeColor": "red",
     "accentColor": "indigo"
   },
   "profile": {
@@ -10,10 +10,10 @@
     "title": "Senior Full Stack Engineer",
     "location": "Sumare, Sao Paulo, Brazil",
     "bio": "Senior Full Stack Engineer with 8 years of experience designing, developing, and deploying high-performance web applications. Specialized in building modern frontend and backend solutions with React.js, Node.js, and AWS. Experienced in cloud infrastructure, microservices, CI/CD practices, and Agile methodologies.",
-    "avatar": "custom-resume-site-temp/assets/images/profile.png"
+    "avatar": "/assets/images/avatar.png"
   },
   "navbar": {
-    "logo": "&lt;FS/&gt;",
+    "logo": "&lt;Lucas's Portfolio/&gt;",
     "links": [
       {
         "text": "About",
@@ -321,13 +321,11 @@
       "title": "Certifications",
       "icon": "award",
       "list": [
-        "AWS Certified Cloud Practitioner",
-        "MongoDB Certified Developer",
-        "Professional Scrum Developer",
-        "Next.js Certification (Vercel)",
-        "TypeScript Certification (Microsoft)",
-        "Edchart Certified React JS Developer Subject Matter Expert",
-        "Python Professional Certification (Python Institute)"
+        "AWS Certified Developer – Associate",
+        "Node.js Certified Developer",
+        "React.js Certified Developer",
+        "Advanced React and Redux: 2021 Edition (Udemy)",
+        "Azure Developer Associate"
       ]
     }
   },
@@ -335,25 +333,21 @@
     "title": "Education",
     "schools": [
       {
-        "name": "Universidade de Brasília",
-        "location": "Brasilia, Brazil",
+        "name": "Anhanguera College",
+        "location": "Sao Paulo, Brazil",
         "degree": "Bachelor's Degree",
         "field": "Computer Science",
-        "period": "2013 – 2017",
+        "period": "2014 – 2017",
         "icon": "graduation-cap",
         "focusAreas": [
-          "Software Engineering & Development",
-          "Database Management",
-          "Network Engineering",
-          "Object-Oriented Programming"
+          "Full-Stack Web Development",
+          "Data Structures & Algorithms",
+          "Cloud Computing"
         ],
         "activities": [
-          "Volleyball and Football Team Member",
-          "Participated in programming contests, placing in the top 3",
-          "Undergraduate Research Assistant (2016-2017)",
-          "Led faculty website migration project"
-        ],
-        "capstoneProject": "Led the migration of the faculty website from Joomla to CodeIgniter as part of the core team, improving site performance and user experience."
+          "Participated in a startup team developing scalable web applications",
+          "Graduated with top academic performance"
+        ]
       }
     ]
   },
@@ -363,30 +357,10 @@
     "form": {
       "title": "Send a Message",
       "fields": [
-        {
-          "id": "name",
-          "label": "Name",
-          "type": "text",
-          "required": true
-        },
-        {
-          "id": "email",
-          "label": "Email",
-          "type": "email",
-          "required": true
-        },
-        {
-          "id": "subject",
-          "label": "Subject",
-          "type": "text",
-          "required": true
-        },
-        {
-          "id": "message",
-          "label": "Message",
-          "type": "textarea",
-          "required": true
-        }
+        { "id": "name", "label": "Name", "type": "text", "required": true },
+        { "id": "email", "label": "Email", "type": "email", "required": true },
+        { "id": "subject", "label": "Subject", "type": "text", "required": true },
+        { "id": "message", "label": "Message", "type": "textarea", "required": true }
       ],
       "submitText": "Send Message",
       "saveToFile": true,
@@ -398,26 +372,26 @@
         {
           "icon": "map-marker-alt",
           "title": "Location",
-          "value": "Lauro de Freitas, Bahia, Brazil"
+          "value": "Sumare, Sao Paulo, Brazil"
         },
         {
           "icon": "envelope",
           "title": "Email",
-          "value": "fleuguinersan@gmail.com",
+          "value": "lucascamposwork777@gmail.com",
           "isLink": true,
-          "url": "mailto:fleuguinersan@gmail.com"
+          "url": "mailto:lucascamposwork777@gmail.com"
         },
         {
           "icon": "github",
           "title": "GitHub",
-          "value": "github.com/username",
+          "value": "github.com/stardev7",
           "isLink": true,
           "url": "#"
         },
         {
           "icon": "linkedin-in",
           "title": "LinkedIn",
-          "value": "linkedin.com/in/username",
+          "value": "linkedin.com/in/lucas-campos-916177348",
           "isLink": true,
           "url": "#"
         }
@@ -425,9 +399,9 @@
       "availability": {
         "enabled": true,
         "title": "Availability",
-        "text": "I'm currently available for freelance work and selective full-time opportunities. Feel free to reach out!",
-        "level": "80%",
-        "label": "Current availability: 80%"
+        "text": "I'm currently available for selective full-time remote opportunities. Feel free to reach out!",
+        "level": "90%",
+        "label": "Current availability: 90%"
       }
     }
   },
@@ -473,6 +447,6 @@
         "ariaLabel": "Email contact"
       }
     ],
-    "copyright": " 2025 Fleuguiner Santos Silva. All rights reserved."
+    "copyright": " 2025 Lucas Campos. All rights reserved."
   }
 }
