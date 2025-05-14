@@ -1,0 +1,326 @@
+/* 
+ * Portfolio Styles - Updated Version
+ * Custom styles beyond Tailwind utility classes
+ */
+
+/* Remove duplicate Tailwind config - keep it only in index.html */
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e40af;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* Animation fixes */
+[data-animation] {
+    opacity: 0; /* Start invisible */
+    will-change: opacity, transform; /* Performance hint */
+    transform: translateZ(0); /* Force GPU acceleration */
+}
+
+.animated-content {
+    opacity: 1 !important;
+    transition: opacity 0.3s ease;
+}
+
+/* Terminal styling - Updated to work with photo layout */
+.terminal-window {
+    position: relative;
+    background: rgba(30, 41, 59, 0.9);
+    color: #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background: rgba(15, 23, 42, 0.8);
+    flex-shrink: 0;
+}
+
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.terminal-dot.red { background-color: #ef4444; }
+.terminal-dot.yellow { background-color: #f59e0b; }
+.terminal-dot.green { background-color: #10b981; }
+
+.terminal-title {
+    margin-left: auto;
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.terminal-body {
+    padding: 16px;
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.prompt {
+    color: #10b981;
+    margin-right: 8px;
+}
+
+.directory {
+    color: #3b82f6;
+    margin-right: 8px;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 16px;
+    background-color: #e2e8f0;
+    animation: blink 1s step-start infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+
+/* About section photo styling */
+.about-photo-container {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    max-width: 100%;
+}
+
+.about-photo-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #2563eb, #4f46e5);
+    border-radius: 12px;
+    transform: rotate(-5deg);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.about-photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-photo-container {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Skill bars animation */
+.skill-bar {
+    transition: width 1s ease-in-out !important;
+    width: 0 !important;
+}
+
+/* Applied class when animation is triggered */
+.skill-bar.animated {
+    width: var(--skill-level) !important;
+}
+
+/* Timeline styling */
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #e2e8f0;
+    transform: translateX(-50%);
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Respect user preferences for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .animate__animated {
+        animation: none !important;
+        opacity: 1 !important;
+    }
+    
+    html {
+        scroll-behavior: auto !important;
+    }
+    
+    .skill-bar {
+        transition: none !important;
+        width: var(--skill-level) !important;
+    }
+    
+    .cursor {
+        animation: none !important;
+        opacity: 1;
+    }
+    
+    .hover-card:hover {
+        transform: none !important;
+    }
+}
+
+/* Cards with hover effect */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* CSS for back to top button */
+#back-to-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Form input focus states */
+.form-input:focus, .form-textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+/* Animation delays for staggered animations */
+.anim-delay-100 { animation-delay: 100ms; }
+.anim-delay-200 { animation-delay: 200ms; }
+.anim-delay-300 { animation-delay: 300ms; }
+.anim-delay-400 { animation-delay: 400ms; }
+.anim-delay-500 { animation-delay: 500ms; }
+
+/* Form success/error messages */
+.form-message {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.form-message.success {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.form-message.error {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline-line, .timeline-dot {
+        display: none;
+    }
+    
+    .terminal-window {
+        transform: scale(0.9);
+        transform-origin: top center;
+        min-height: 180px;
+    }
+    
+    /* Make photo and terminal stack on mobile */
+    .profile-photo-container {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    html, body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    nav, footer, #back-to-top, .contact-section {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    /* Ensure content is print-friendly */
+    .section {
+        page-break-inside: avoid;
+        margin-bottom: 20px !important;
+    }
+    
+    /* Disable animations for print */
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
