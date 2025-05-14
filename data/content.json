@@ -3,14 +3,14 @@
     "title": "Lucas Campos | Senior Full Stack Engineer",
     "description": "Lucas Campos - Senior Full Stack Engineer specializing in robust web application development",
     "themeColor": "red",
-    "accentColor": "indigo"
+    "accentColor": "green"
   },
   "profile": {
     "name": "Lucas Campos",
     "title": "Senior Full Stack Engineer",
     "location": "Sumare, Sao Paulo, Brazil",
     "bio": "Senior Full Stack Engineer with 8 years of experience designing, developing, and deploying high-performance web applications. Specialized in building modern frontend and backend solutions with React.js, Node.js, and AWS. Experienced in cloud infrastructure, microservices, CI/CD practices, and Agile methodologies.",
-    "avatar": "/assets/images/avatar.png"
+    "avatar": "/assets/images/profile.png"
   },
   "navbar": {
     "logo": "&lt;Lucas's Portfolio/&gt;",
