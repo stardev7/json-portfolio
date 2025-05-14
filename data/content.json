@@ -386,14 +386,14 @@
           "title": "GitHub",
           "value": "github.com/stardev7",
           "isLink": true,
-          "url": "#"
+          "url": "https://github.com/stardev7"
         },
         {
           "icon": "linkedin-in",
           "title": "LinkedIn",
           "value": "linkedin.com/in/lucas-campos-916177348",
           "isLink": true,
-          "url": "#"
+          "url": "https://linkedin.com/in/lucas-campos-916177348"
         }
       ],
       "availability": {
