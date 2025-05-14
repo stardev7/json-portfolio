@@ -7,8 +7,8 @@
 const CONFIG = {
     contentPath: 'data/content.json',
     schemaPath: 'data/schema.json',
-    defaultThemeColor: 'blue',
-    defaultAccentColor: 'indigo'
+    defaultThemeColor: 'orange',
+    defaultAccentColor: 'amber'
 };
 
 // Main application state
