@@ -115,20 +115,16 @@
         "position": "Senior Full Stack Engineer",
         "period": "Jul 2023 – Present",
         "achievements": [
-          "Led a development team building a high-conversion eCommerce platform for electric bikes, raising conversion rates by 2.5%.",
-          "Developed e-Wallet and crypto trading features of a major online banking portal project, achieved sub-2 second load times and a 5% conversion lift.",
-          "Created technical documentation and visual flowcharts about backend architecture and data flows to to facilitate communication within cross-functional teams.",
-          "Collaborated in Agile/Scrum teams participating in sprint planning, reviews, and retrospectives, closely working with developers, designers and product owners.",
+          "Developed e-Wallet and crypto trading features of an online banking portal with React.js, Next.js, Node.js, and AWS, achieving sub-2 second load times and a 5% conversion lift.",
+          "Led a Node.js backend team of 4 to build a high-conversion eCommerce platform, improving conversion rates by 2.5%.",
+          "Integrated cross-platform mobile features using React Native and Expo for seamless access on iOS and Android.",
+          "Deployed CI/CD pipelines via Azure DevOps, reducing release cycles by 30%.",
           "Collaborated in Agile/Scrum teams with developers, designers, and product owners."
         ],
         "skills": [
-          "JavaScript",
-          "Google Cloud Platform (GCP)",
-          "Node.js",
-          "TypeScript",
-          "Agile Methodologies",
           "React.js",
           "Next.js",
+          "Node.js",
           "AWS",
           "TypeScript",
           "PostgreSQL",
@@ -147,19 +143,11 @@
           "Established monitoring and proactive logging frameworks to enhance observability."
         ],
         "skills": [
-          "TypeScript",
-          "Google Cloud Platform (GCP)",
-          "Node.js",
-          "GraphQL",
-          "MongoDB",
-          "Teamwork",
-          "Json Web Token (JWT)",
           "React.js",
-          "Redux",
           "Node.js",
           "Express.js",
           "MongoDB",
-          "JavaScript",
+          "TypeScript",
           "Kubernetes",
           "AWS"
         ]
@@ -170,26 +158,17 @@
         "position": "Web Developer",
         "period": "Jan 2018 – Feb 2019",
         "achievements": [
-          "Developed and optimized full-stack web applications for enterprise clients across finance and education sectors.",
-          "Contributed to development of a modular enterprise dashboard, enabling real-time data visualization and reducing decision-making time by 40%.",
-          "Managed AWS infrastructure including EC2, S3, and API Gateway; introduced IaC via CloudFormation templates."
+          "Designed and optimized full-stack web applications using React.js, Node.js, and MongoDB for finance and education clients.",
+          "Built and maintained RESTful APIs using Express.js, Apollo Server, and GraphQL for real-time data visualization.",
+          "Managed AWS EC2, S3, and API Gateway infrastructure, and implemented Infrastructure as Code using CloudFormation."
         ],
         "skills": [
-          "Node.js",
-          "C#",
-          "MongoDB",
-          ".NET Framework",
-          "Express.js",
-          "Search Engine Optimization (SEO)",
-          "WebSocket",
-          "Storybook",
           "React.js",
-          "MySQL",
+          "Node.js",
+          "MongoDB",
           "GraphQL",
           "AWS",
-          "Express.js",
-          "Server Side Programming",
-          "Infrastructure as Code (IaC)"
+          "Express.js"
         ]
       }
     ]
